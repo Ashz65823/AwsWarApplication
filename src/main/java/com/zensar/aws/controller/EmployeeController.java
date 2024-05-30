@@ -33,12 +33,14 @@ public class EmployeeController {
 	@GetMapping("/allEmployees")
 	public List<Employee> findAllEmployees()
 	{
+		System.out.println("Printing all employess");
 		return service.getAllEmployees();
 	}
 	
 	@GetMapping("/Employee/{id}")
 	public Employee findEmployeeByID(@PathVariable int id)
 	{
+		System.out.println("_____Printing all employess");
 		return service.getEmployeeById(id);
 	}
 }
